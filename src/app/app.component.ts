@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
         description: 'Apple al parco con la sua palletta',
         imageUrl:'https://scontent.fmxp5-1.fna.fbcdn.net/v/t1.18169-9/10440834_10204401506457317_3729761187197286767_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=4IidxSJHUDcAX-NfTyS&_nc_ht=scontent.fmxp5-1.fna&oh=00_AfAL5-skZzU3YqxzW3qhym-0NhljxCpJlyRiNMFJL81YGg&oe=64B266F6',
         createdDate: new Date(),
-        snaps: 0,
+        snaps: 140,
         location: 'Roma'
       },
       {
