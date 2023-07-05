@@ -11,9 +11,7 @@ export class FaceSnapComponent implements OnInit {
   @Input() faceSnap!: FaceSnap;
   buttonText!: string;
 
-  constructor(private faceSnapService: FaceSnapService) {
-
-  }
+  constructor(private faceSnapService: FaceSnapService) {}
 
   ngOnInit() {
     this.buttonText = 'Oh Snap!';
@@ -21,10 +19,10 @@ export class FaceSnapComponent implements OnInit {
 
   onSnap(){
     if (this.buttonText === 'Oh Snap!') {
-      this.faceSnapService.snapFaceSnapById(this.faceSnap.id);
+      this.faceSnapService.snapFaceSnapById(this.faceSnap.id, 'snap');
       this.buttonText = 'Oops, unsnap!';
     }else{
-      this.faceSnapService.unsnapFaceSnapById(this.faceSnap.id);
+      this.faceSnapService.snapFaceSnapById(this.faceSnap.id, 'unsnap');
       this.buttonText = 'Oh Snap!';
 
     }
